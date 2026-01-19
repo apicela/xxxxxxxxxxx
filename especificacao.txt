@@ -1,0 +1,16 @@
+1.	Quais lacunas você enxerga nessa especificação?
+2.	Que decisões de implementação você tomaria diante delas?
+3.	Quais riscos existem se essas decisões não forem esclarecidas?
+4.	Como você trataria feedbacks ruins?
+
+1.
+    - Não há especificação de notificação para o usuario ou receptor, para compreender os status dos tickets
+    - Deverá conter anexos?
+    - Deverá cada user teu usuario para registrar quem esta atuando?
+    - Deverá haver logs? ex: data das modificaçoes, mudança de status, de atendente, etc
+
+2. Implementaria coisas que acredito que são fundamentais, entretanto, que não demande muito esforço
+
+3. Aplicação não sair como o time espera, fazendo com que, não seja uma aplicação útil, ou que gere atraso na entrega
+
+4. Entenderia os pontos, refletiria acerca deles, para que possa melhorar meu trabalho
