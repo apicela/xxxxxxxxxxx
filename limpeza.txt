@@ -1,0 +1,19 @@
+# Problemas em prioridade de resolução
+1. Não tem segurança. Perigo -> Qualquer um pode modificar ou inserir dados
+    Ex: token JWT, roles, etc
+
+2. Usar um logger para depurar e manter os dados no servidor, invés de printar no console client-side. Perigo: Vazar dados indevidos no console e dificuldades de trackear no backend os logs
+
+3. Usar principios da orientação a objetos. Perigo: Dificil de dar manutenção, legibilidade, escalar
+	Ex: Usar classes utilitárias como por ex: validar entradas, usar service/useCase para não deixar as regras no controller, utilizar DTOS, facilitando legibilidade, padronização e implementar validadores
+
+4. Problemas de performance:
+    - o find sem um limite no repositorio, pode causar gargalo
+    - No exemplo do title.trim(), a função é chamada duas vezes, talvez seja melhor fazer um trade-off de salvar uma variavel "trimmedValue" inves de recalcular o trim() desnecessariamente
+
+5. Usar um middleware de exceptions. Perigo: Assim como o primeiro, seria um bom padrão de projeto
+
+Prioridade:
+    - O primeiro, é autoexplicativo, devido a segurança de dados ser algo de muita importância
+    - O segundo, devido a facilidade de implementar e trackear os logs no backend
+    - O terceiro, devido a facilidade de implementar e facilitar possíveis features
